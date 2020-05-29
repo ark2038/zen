@@ -66,6 +66,8 @@
 
 #include "librustzcash.h"
 
+
+
 using namespace std;
 
 extern void ThreadSendAlert();
@@ -1117,7 +1119,6 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
             LogPrintf("Mempool configured to reject transactions with greater than %lld transparent inputs\n", limit);
         }
     }
-
 
     // ********************************************************* Step 4: application initialization: dir lock, daemonize, pidfile, debug log
 
